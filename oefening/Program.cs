@@ -13,7 +13,7 @@ namespace First
         /* Schrijf een functie die twee opgegeven strings vergelijkt. Indien de strings identiek zijn (ook wat hoofd/kleine
          * letters betreft), dan geef je 'Identiek' als functieresultaat. Zijn de strings verschillend dan is het functieresultaat 
          * 'Verschillend'. Zijn de strings gelijk, maar verschillen ze op gebied van hoofdletters of kleine letters, dan 
-         * geef je 'Verschil letters' als resultaat . !!!!String.Compare() !!!!
+         * geef je 'Verschil letters' als resultaat . !!!!String.Equals() !!!!
         */
 
         public static string VergelijkStrings(string s1, string s2)
@@ -22,7 +22,7 @@ namespace First
             return "";
         }
 
-        /* Schrijf een functie die nagaat of een opgegeven woord in een array van strings voorkomt. Als resultaat geef je
+        /* Schrijf een functie die nagaat of een opgegeven woord in de tweede string voorkomt. Als resultaat geef je
          * true (het woord komt in de array voor) of false (het woord komt niet in de array voor).
         */
 
@@ -71,7 +71,7 @@ namespace First
         }
 
         /* Schrijf een functie die het langste woord in een opgegeven zin zoekt en dit woord als functieresultaat geeft.
-         * Indien er meerdere woorden dezelfde lengte hebben, geef je één van deze woorden als resultaat.
+         * Indien er meerdere woorden dezelfde lengte hebben, geef je Ã©Ã©n van deze woorden als resultaat.
         */
         public static string ZoekLangsteWoord(string zin)
         {
@@ -84,8 +84,8 @@ namespace First
          * Maak bij deze oefening gebruik van een array voor het opslaan van de klinker-tellers en van een array die 
          * de klinkers bevat.
          * Zoek op hoe je de functies Max() en IndexOf() kan gebruiken in combinatie met deze arrays om de code op een
-         * efficiënte manier uit te werken.
-         * Indien meerdere klinkers hetzelfde aantal keren voorkomen in de string, geef je één van deze klinkers als resultaat.
+         * efficiÃ«nte manier uit te werken.
+         * Indien meerdere klinkers hetzelfde aantal keren voorkomen in de string, geef je Ã©Ã©n van deze klinkers als resultaat.
         */
 
         public static char ZoekKlinker(string zin)
