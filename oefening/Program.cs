@@ -23,7 +23,7 @@ namespace First
         }
 
         /* Schrijf een functie die nagaat of een opgegeven woord in de tweede string voorkomt. Als resultaat geef je
-         * true (het woord komt in de array voor) of false (het woord komt niet in de array voor).
+         * true (het woord komt in de string voor) of false (het woord komt niet in de string voor).
         */
 
         public static bool ZoekWoord(string woord, string zin)
@@ -52,15 +52,6 @@ namespace First
             return "";
         }
 
-        /* Schrijf een functie die nagaat of een ingegeven woord een palindroom is. Het resultaat van de functie is true als
-         * het woord een palindroom is, false als het geen palindroom is. !!!!StrReverse() opzoeken!!!!
-        */
-        public static bool IsPalindroom(string woord)
-        {
-            // schrijf hier je code
-            return true;
-        }
-
         /* Schrijf een functie die telt hoeveel karakters een string bevat, nadat de overtollige spaties in het begin en
          * het einde verwijderd zijn. Geef het aantal karakters als functieresultaat. !!!!Trim()!!!!
         */
@@ -77,21 +68,6 @@ namespace First
         {
             // schrijf hier je code
             return "";
-        }
-
-        /* Schrijf een functie die zoekt welke klinker het meest voorkomt in een string en deze klinker als 
-         * functieresultaat geeft. Hoofdletters en kleine letters van dezelfde klinker mogen samengeteld worden.
-         * Maak bij deze oefening gebruik van een array voor het opslaan van de klinker-tellers en van een array die 
-         * de klinkers bevat.
-         * Zoek op hoe je de functies Max() en IndexOf() kan gebruiken in combinatie met deze arrays om de code op een
-         * efficiënte manier uit te werken.
-         * Indien meerdere klinkers hetzelfde aantal keren voorkomen in de string, geef je één van deze klinkers als resultaat.
-        */
-
-        public static char ZoekKlinker(string zin)
-        {
-            // schrijf hier je code
-            return ' ';
         }
 
         /* Ontwerp een consoletoepassing waarmee je een Belgisch ondernemingsnummer kan controleren. 
@@ -117,12 +93,8 @@ namespace First
             Console.WriteLine("TelLetter \t\t 4 \t\t\t\t " + TelLetter('a', "Computers zijn handige apparaten."));
             Console.WriteLine("TelLetter \t\t 0 \t\t\t\t " + TelLetter('u', "Deze zin bevat de letter niet."));
             Console.WriteLine("VeranderKlinkers \t D*z* z*n b*v*t g**n kl*nk*rs. \t " + VeranderKlinkers("Deze zin bevat geen klinkers."));
-            Console.WriteLine("IsPalindroom \t\t False \t\t\t\t " + IsPalindroom("water"));
-            Console.WriteLine("IsPalindroom \t\t True \t\t\t\t " + IsPalindroom("lepel"));
             Console.WriteLine("TelKarakters \t\t 18 \t\t\t\t " + TelKarakters("   Dit is de testzin.    "));
             Console.WriteLine("ZoekLangsteWoord \t aangekomen \t\t\t " + ZoekLangsteWoord("De nieuwe computers zijn aangekomen op school."));
-            Console.WriteLine("ZoekKlinker \t\t i \t\t\t\t " + ZoekKlinker("Dit is een zin."));
-            Console.WriteLine("ZoekKlinker \t\t e \t\t\t\t " + ZoekKlinker("De naam van de straat is Esseneweg."));
             Console.WriteLine("ControleerOndNr \t True \t\t\t\t " + ControleerOndNr("BE 0425.989.356"));
             Console.WriteLine("ControleerOndNr \t False \t\t\t\t " + ControleerOndNr("BE 0425.989.355"));
             Console.ReadKey();
