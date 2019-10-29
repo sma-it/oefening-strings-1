@@ -45,14 +45,6 @@ namespace Tests
         }
 
         [Test]
-        public void TestIsPalindroom()
-        {
-            Assert.That(First.Program.IsPalindroom("computer"), Is.EqualTo(false));
-            Assert.That(First.Program.IsPalindroom("koortsmeetsysteemstrook"), Is.EqualTo(true));
-
-        }
-
-        [Test]
         public void TestTelKarakters()
         {
             Assert.That(First.Program.TelKarakters("     Een klavier is een invoerapparaat.  "), Is.EqualTo(34));
@@ -63,14 +55,6 @@ namespace Tests
         public void TestZoekLangsteWoord()
         {
             Assert.That(First.Program.ZoekLangsteWoord("Het woord toetsenbord is een lang woord."), Is.EqualTo("toetsenbord"));
-
-        }
-
-        [Test]
-        public void TestZoekKlinker()
-        {
-            Assert.That(First.Program.ZoekKlinker("De Evenaar loopt om de aarde."), Is.EqualTo('e'));
-            Assert.That(First.Program.ZoekKlinker("We kopen oliebollen op school."), Is.EqualTo('o'));
 
         }
 
