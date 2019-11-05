@@ -74,7 +74,7 @@ namespace First
          * Een Belgisch ondernemingsnummer is als volgt opgebouwd: BE 0xxx.xxx.xxx waarbij BE de landcode is die standaard gevolgd
          * wordt door een spatie en dan een 0. Wanneer je de volgende 7 cijfers deelt door 97 in een gehele deling, dan is het 
          * getal gevormd door de laatste 2 cijfers gelijk aan 97 minus de rest van deze gehele deling. 
-         * Een ongeldig ondernemingsnummer genereert 'true' als functieresultaat, een ongeldig 'false'.
+         * Een geldig ondernemingsnummer genereert 'true' als functieresultaat, een ongeldig 'false'.
         */
         public static bool ControleerOndNr(string ondNr)
         {
